@@ -28,7 +28,7 @@ public class SpringJdbcApiApplication implements CommandLineRunner {
 
         log.info("Creating tables");
 
-        jdbcTemplate.execute("DROP TABLE Personnes IF EXISTS");
+        jdbcTemplate.execute("DROP TABLE Personnes");
         jdbcTemplate.execute("CREATE TABLE Personnes(" +
                 "id INTEGER, prenom VARCHAR(255), nom VARCHAR(255))");
 
